@@ -1,0 +1,4 @@
+[submodule "jfst"]
+	path = jfst
+	url = https://github.com/tdaneyko/jfst.git
+	branch = master

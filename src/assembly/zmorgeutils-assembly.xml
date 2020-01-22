@@ -1,0 +1,45 @@
+<assembly
+        xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3 http://maven.apache.org/xsd/assembly-1.1.3.xsd">
+    <id>zmorgeutils-assembly</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>/</outputDirectory>
+            <useProjectArtifact>false</useProjectArtifact>
+            <unpack>true</unpack>
+            <scope>runtime</scope>
+            <includes>
+                <include>net.sf.trove4j:trove4j</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+    <fileSets>
+        <fileSet>
+            <outputDirectory>/</outputDirectory>
+            <directory>${project.build.outputDirectory}</directory>
+            <excludes>
+                <exclude>de/tuebingen/sfs/depparser/**</exclude>
+                <exclude>de/tuebingen/sfs/eie/**</exclude>
+                <exclude>de/tuebingen/sfs/mstparser/**</exclude>
+                <exclude>de/tuebingen/sfs/psl/**</exclude>
+                <exclude>deu-grammar-rules.txt</exclude>
+                <exclude>zmorgelemma/**</exclude>
+                <exclude>zmorgegen/**</exclude>
+            </excludes>
+        </fileSet>
+        <fileSet>
+            <outputDirectory>/</outputDirectory>
+            <directory>${project.build.sourceDirectory}</directory>
+            <excludes>
+                <exclude>de/tuebingen/sfs/depparser/**</exclude>
+                <exclude>de/tuebingen/sfs/mstparser/**</exclude>
+                <exclude>de/tuebingen/sfs/psl/**</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>
