@@ -22,24 +22,24 @@
         <fileSet>
             <outputDirectory>/</outputDirectory>
             <directory>${project.build.outputDirectory}</directory>
-            <excludes>
-                <exclude>de/tuebingen/sfs/depparser/**</exclude>
-                <exclude>de/tuebingen/sfs/eie/**</exclude>
-                <exclude>de/tuebingen/sfs/mstparser/**</exclude>
-                <exclude>de/tuebingen/sfs/psl/**</exclude>
-                <exclude>deu-grammar-rules.txt</exclude>
-                <exclude>zmorgelemma/**</exclude>
-                <exclude>zmorgegen/**</exclude>
-            </excludes>
+<!--            <excludes>-->
+<!--                <exclude>de/tuebingen/sfs/depparser/**</exclude>-->
+<!--                <exclude>de/tuebingen/sfs/eie/**</exclude>-->
+<!--                <exclude>de/tuebingen/sfs/mstparser/**</exclude>-->
+<!--                <exclude>de/tuebingen/sfs/psl/**</exclude>-->
+<!--                <exclude>deu-grammar-rules.txt</exclude>-->
+<!--                <exclude>zmorgelemma/**</exclude>-->
+<!--                <exclude>zmorgegen/**</exclude>-->
+<!--            </excludes>-->
         </fileSet>
         <fileSet>
             <outputDirectory>/</outputDirectory>
             <directory>${project.build.sourceDirectory}</directory>
-            <excludes>
-                <exclude>de/tuebingen/sfs/depparser/**</exclude>
-                <exclude>de/tuebingen/sfs/mstparser/**</exclude>
-                <exclude>de/tuebingen/sfs/psl/**</exclude>
-            </excludes>
+<!--            <excludes>-->
+<!--                <exclude>de/tuebingen/sfs/depparser/**</exclude>-->
+<!--                <exclude>de/tuebingen/sfs/mstparser/**</exclude>-->
+<!--                <exclude>de/tuebingen/sfs/psl/**</exclude>-->
+<!--            </excludes>-->
         </fileSet>
     </fileSets>
 </assembly>
